@@ -1,0 +1,21 @@
+{
+  "name": "reset_css_for_mobile",
+  "version": "0.0.1",
+  "description": "reset_css for mobile",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "reset",
+    "css",
+    "mobile"
+  ],
+  "author": "hege",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-minify-css": "^1.2.4"
+  }
+}
