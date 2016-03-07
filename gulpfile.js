@@ -1,5 +1,6 @@
 var gulp=require("gulp"),
 	minifyCss = require('gulp-minify-css'),			//压缩css
+	rename = require('gulp-rename'),				//更改名字
 	clean=require("gulp-clean");					//clean目录
 
 
@@ -15,6 +16,9 @@ gulp.task("clean",function(){
 gulp.task("min-css", ['clean'], function(){
 	return gulp.src("src/**/*.css")
 	.pipe(minifyCss())
+	.pipe(rename(function(path){
+		path.basename += '_min'
+	}))
 	.pipe(gulp.dest('dist/'));
 })
 
